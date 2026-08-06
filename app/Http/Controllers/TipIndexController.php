@@ -13,4 +13,9 @@ class TipIndexController extends Controller
             ->paginate(10);
         return TipResource::collection($tips);
     }
+
+    public function getActivesTips()
+    {
+
+    }
 }
