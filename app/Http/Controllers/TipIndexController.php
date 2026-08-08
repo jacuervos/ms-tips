@@ -14,8 +14,12 @@ class TipIndexController extends Controller
         return TipResource::collection($tips);
     }
 
-    public function getActivesTips()
+    public function indexActive()
     {
-
+        $blogs = Tip::where('is_active', true)
+            ->orderBy('id', 'DESC')
+            ->paginate(10);
+        return TipResource::collection($blogs);
     }
+
 }

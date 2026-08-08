@@ -10,4 +10,7 @@ Route::middleware(['auth.jwt', 'role:'.Rol::ADMIN])->group(function () {
     Route::patch('{tip}/change_state_tips', '\App\Http\Controllers\TipChangeStateController@changeStateTip')->name('tip.changeState'); //Cambiar estado tips
 });
 
+Route::middleware(['auth.jwt', 'role:'.Rol::USER])->group(function () {
+    Route::get('tips_app', '\App\Http\Controllers\TipIndexController@indexActive')->name('tip.indexActive'); //Mostrar tips activos
+});
 
