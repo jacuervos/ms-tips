@@ -21,4 +21,5 @@ class TipIndexController extends Controller
             ->get();
         return TipResource::collection($tips);
     }
+
 }
