@@ -1,0 +1,26 @@
+{
+  "backendStories": [
+    {
+      "id": "hu30-creacion-tips",
+      "title": "HU-30 Creación de tips",
+      "filter": "TipStoreControllerTest",
+      "sprint": 5,
+      "enabled": true
+    },
+    {
+      "id": "hu32-edicion-cambio-estado-tips",
+      "title": "HU-32 Edición o cambios de estados de tips",
+      "filter": "TipUpdateAndChangeStateControllerTest",
+      "sprint": 5,
+      "enabled": true
+    },
+    {
+      "id": "hu34-visualizacion-tips",
+      "title": "HU-34 Visualización de tips",
+      "filter": "TipIndexControllerTest",
+      "sprint": 5,
+      "enabled": true
+    }
+  ]
+}
+

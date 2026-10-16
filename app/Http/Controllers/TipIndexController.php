@@ -16,6 +16,9 @@ class TipIndexController extends Controller
 
     public function getActivesTips()
     {
-
+        $tips = Tip::where('is_active', true)
+            ->orderBy('id', 'DESC')
+            ->get();
+        return TipResource::collection($tips);
     }
 }
